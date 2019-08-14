@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2019/08/14 11:14:19.423,=C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/08/14 11:14:59.726,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\mainScr.pas=C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/08/14 11:14:59.726,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\mainScr.dfm=C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019/08/14 11:15:18.973,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\cadSoc.dproj=C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

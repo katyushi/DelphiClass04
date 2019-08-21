@@ -4,10 +4,11 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.DBCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.DBCtrls,
+  Vcl.Buttons, Data.DB, Vcl.Grids, Vcl.DBGrids;
 
 type
-  TForm3 = class(TForm)
+  TCadDpForm = class(TForm)
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
@@ -19,6 +20,17 @@ type
     Edit3: TEdit;
     RadioGroup1: TRadioGroup;
     ComboBox1: TComboBox;
+    DBGrid1: TDBGrid;
+    BbtCancel: TBitBtn;
+    BbtSair: TBitBtn;
+    BbtDel: TBitBtn;
+    BbtUlt: TBitBtn;
+    BbtProx: TBitBtn;
+    BbtConfirm: TBitBtn;
+    BbtAnt: TBitBtn;
+    BbtPrimeiro: TBitBtn;
+    BbtInserir: TBitBtn;
+    BbtAlt: TBitBtn;
   private
     { Private declarations }
   public
@@ -26,7 +38,7 @@ type
   end;
 
 var
-  Form3: TForm3;
+  CadDpForm: TCadDpForm;
 
 implementation
 

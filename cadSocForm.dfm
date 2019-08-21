@@ -1,4 +1,4 @@
-object Form2: TForm2
+object CadSosForm: TCadSosForm
   Left = 0
   Top = 0
   ActiveControl = EdtDataNasc
@@ -148,7 +148,7 @@ object Form2: TForm2
       'Nome')
     TabOrder = 7
   end
-  object BitBtn1: TBitBtn
+  object BbtInserir: TBitBtn
     Left = 41
     Top = 280
     Width = 75
@@ -156,7 +156,7 @@ object Form2: TForm2
     Caption = 'Inserir'
     TabOrder = 8
   end
-  object BitBtn2: TBitBtn
+  object BbtPrimeiro: TBitBtn
     Left = 41
     Top = 311
     Width = 75
@@ -164,7 +164,7 @@ object Form2: TForm2
     Caption = 'Primeiro'
     TabOrder = 9
   end
-  object BitBtn3: TBitBtn
+  object BbtAlt: TBitBtn
     Left = 136
     Top = 280
     Width = 75
@@ -172,7 +172,7 @@ object Form2: TForm2
     Caption = 'Alterar'
     TabOrder = 10
   end
-  object BitBtn4: TBitBtn
+  object BbtAnt: TBitBtn
     Left = 136
     Top = 311
     Width = 75
@@ -180,7 +180,7 @@ object Form2: TForm2
     Caption = 'Anterior'
     TabOrder = 11
   end
-  object BitBtn5: TBitBtn
+  object BbtConfirm: TBitBtn
     Left = 232
     Top = 280
     Width = 75
@@ -188,7 +188,7 @@ object Form2: TForm2
     Caption = 'Confirmar'
     TabOrder = 12
   end
-  object BitBtn6: TBitBtn
+  object BbtProx: TBitBtn
     Left = 232
     Top = 311
     Width = 75
@@ -196,7 +196,7 @@ object Form2: TForm2
     Caption = 'Proximo'
     TabOrder = 13
   end
-  object BitBtn7: TBitBtn
+  object BbtCancel: TBitBtn
     Left = 328
     Top = 280
     Width = 75
@@ -205,7 +205,7 @@ object Form2: TForm2
     Caption = 'Cancelar'
     TabOrder = 14
   end
-  object BitBtn8: TBitBtn
+  object BbtUlt: TBitBtn
     Left = 328
     Top = 311
     Width = 75
@@ -213,7 +213,7 @@ object Form2: TForm2
     Caption = 'Ultimo'
     TabOrder = 15
   end
-  object BitBtn9: TBitBtn
+  object BbtDel: TBitBtn
     Left = 419
     Top = 280
     Width = 75
@@ -221,7 +221,7 @@ object Form2: TForm2
     Caption = 'Deletar'
     TabOrder = 16
   end
-  object BitBtn10: TBitBtn
+  object BbtSair: TBitBtn
     Left = 419
     Top = 311
     Width = 75

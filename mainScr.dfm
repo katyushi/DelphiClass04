@@ -1,4 +1,4 @@
-object Form1: TForm1
+object CadMain: TCadMain
   Left = 0
   Top = 0
   Caption = 'Controle de S'#243'cios'
@@ -78,9 +78,11 @@ object Form1: TForm1
       Caption = 'Cadastro'
       object Scios1: TMenuItem
         Caption = 'S'#243'cios'
+        OnClick = Scios1Click
       end
       object Dependentes1: TMenuItem
         Caption = 'Dependentes'
+        OnClick = Dependentes1Click
       end
       object N1: TMenuItem
         Caption = '-'

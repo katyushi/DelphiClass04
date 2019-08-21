@@ -99,15 +99,15 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="mainScr.pas">
-            <Form>Form1</Form>
+            <Form>CadMain</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="cadSocForm.pas">
-            <Form>Form2</Form>
+            <Form>CadSosForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="CadDepen.pas">
-            <Form>Form3</Form>
+            <Form>CadDpForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

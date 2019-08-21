@@ -8,7 +8,7 @@ uses
   Vcl.Buttons, Vcl.XPMan, Vcl.ExtCtrls;
 
 type
-  TForm1 = class(TForm)
+  TCadMain = class(TForm)
     SbSocios: TSpeedButton;
     SbDependente: TSpeedButton;
     SbCalendario: TSpeedButton;
@@ -34,6 +34,8 @@ type
     procedure SbSairClick(Sender: TObject);
     procedure Sair1Click(Sender: TObject);
     procedure Sair2Click(Sender: TObject);
+    procedure Scios1Click(Sender: TObject);
+    procedure Dependentes1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,25 +43,37 @@ type
   end;
 
 var
-  Form1: TForm1;
+  CadMain: TCadMain;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.Sair1Click(Sender: TObject);
+uses cadSocForm, CadDepen;
+
+procedure TCadMain.Dependentes1Click(Sender: TObject);
+begin
+CadDpForm.ShowModal;
+end;
+
+procedure TCadMain.Sair1Click(Sender: TObject);
 begin
 Application.Terminate;
 end;
 
-procedure TForm1.Sair2Click(Sender: TObject);
+procedure TCadMain.Sair2Click(Sender: TObject);
 begin
 Application.Terminate;
 end;
 
-procedure TForm1.SbSairClick(Sender: TObject);
+procedure TCadMain.SbSairClick(Sender: TObject);
 begin
 Application.Terminate;
+end;
+
+procedure TCadMain.Scios1Click(Sender: TObject);
+begin
+CadSosForm.ShowModal;
 end;
 
 end.

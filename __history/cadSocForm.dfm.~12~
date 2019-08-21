@@ -14,49 +14,49 @@ object CadSosForm: TCadSosForm
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object nome: TLabel
+  object Label1: TLabel
     Left = 56
     Top = 40
     Width = 31
     Height = 13
     Caption = 'Nome:'
   end
-  object endereco: TLabel
+  object Label2: TLabel
     Left = 38
     Top = 72
     Width = 49
     Height = 13
     Caption = 'Endere'#231'o:'
   end
-  object telefone: TLabel
+  object Label3: TLabel
     Left = 41
     Top = 104
     Width = 46
     Height = 13
     Caption = 'Telefone:'
   end
-  object titulo: TLabel
+  object Label4: TLabel
     Left = 464
     Top = 40
     Width = 30
     Height = 13
     Caption = 'Titulo:'
   end
-  object Ddnasc: TLabel
+  object Label5: TLabel
     Left = 394
     Top = 72
     Width = 100
     Height = 13
     Caption = 'Data de Nascimento:'
   end
-  object cpf: TLabel
+  object Label7: TLabel
     Left = 224
     Top = 104
     Width = 23
     Height = 13
     Caption = 'CPF:'
   end
-  object BusSoc: TLabel
+  object Label8: TLabel
     Left = 30
     Top = 452
     Width = 80
@@ -69,7 +69,7 @@ object CadSosForm: TCadSosForm
     Width = 65
     Height = 17
   end
-  object RgSex: TRadioGroup
+  object RadioGroup1: TRadioGroup
     Left = 30
     Top = 192
     Width = 163
@@ -122,7 +122,7 @@ object CadSosForm: TCadSosForm
     TabOrder = 5
     Text = 'EdtCpf'
   end
-  object RgEstCiv: TRadioGroup
+  object RadioGroup2: TRadioGroup
     Left = 224
     Top = 192
     Width = 345
@@ -136,7 +136,7 @@ object CadSosForm: TCadSosForm
       'Viuvo (a)')
     TabOrder = 6
   end
-  object RgOrderBy: TRadioGroup
+  object RadioGroup3: TRadioGroup
     Left = 528
     Top = 271
     Width = 116
@@ -241,12 +241,12 @@ object CadSosForm: TCadSosForm
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object EdtBusSoc: TEdit
+  object Edit1: TEdit
     Left = 120
     Top = 447
     Width = 524
     Height = 21
     TabOrder = 19
-    Text = 'EdtBusSoc'
+    Text = 'Edit1'
   end
 end

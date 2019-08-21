@@ -9,20 +9,20 @@ uses
 
 type
   TCadSosForm = class(TForm)
-    RgSex: TRadioGroup;
-    nome: TLabel;
-    endereco: TLabel;
-    telefone: TLabel;
-    titulo: TLabel;
-    Ddnasc: TLabel;
+    RadioGroup1: TRadioGroup;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
     EdtDataNasc: TEdit;
     EdtNome: TEdit;
     EdtTelefone: TEdit;
     EdtEndereco: TEdit;
-    cpf: TLabel;
+    Label7: TLabel;
     EdtCpf: TEdit;
-    RgEstCiv: TRadioGroup;
-    RgOrderBy: TRadioGroup;
+    RadioGroup2: TRadioGroup;
+    RadioGroup3: TRadioGroup;
     BbtInserir: TBitBtn;
     BbtPrimeiro: TBitBtn;
     BbtAnt: TBitBtn;
@@ -33,8 +33,8 @@ type
     BbtDel: TBitBtn;
     BbtSair: TBitBtn;
     DBGrid1: TDBGrid;
-    BusSoc: TLabel;
-    EdtBusSoc: TEdit;
+    Label8: TLabel;
+    Edit1: TEdit;
     DBText1: TDBText;
     BbtAlt: TBitBtn;
   private

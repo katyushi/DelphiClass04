@@ -56,7 +56,6 @@ object CadMain: TCadMain
     Width = 31
     Height = 13
     Caption = 'Label1'
-    Visible = False
   end
   object Label2: TLabel
     Left = 504
@@ -64,7 +63,6 @@ object CadMain: TCadMain
     Width = 31
     Height = 13
     Caption = 'Label2'
-    Visible = False
   end
   object StatusBar1: TStatusBar
     Left = 0

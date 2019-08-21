@@ -2,14 +2,14 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2019/08/14 11:14:19.000.423,=C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2019/08/14 11:14:59.000.726,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\mainScr.pas=C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2019/08/14 11:14:59.000.726,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\mainScr.dfm=C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2019/08/14 11:15:18.000.973,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\cadSoc.dproj=C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/08/14 11:14:59.000.726,C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\mainScr.pas</Transaction>
+    <Transaction>2019/08/14 11:14:59.000.726,C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\mainScr.dfm</Transaction>
+    <Transaction>2019/08/14 11:15:18.000.973,C:\Users\hugo lazzari\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\cadSoc.dproj</Transaction>
     <Transaction>2019/08/20 11:44:09.000.297,=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit2.pas</Transaction>
-    <Transaction>2019/08/20 12:02:34.000.623,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit2.dfm=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\cadSocForm.dfm</Transaction>
-    <Transaction>2019/08/20 12:02:34.000.623,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit2.pas=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\cadSocForm.pas</Transaction>
-    <Transaction>2019/08/21 11:31:59.841,=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit3.pas</Transaction>
-    <Transaction>2019/08/21 11:43:13.050,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\CadDepen.dfm=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit3.dfm</Transaction>
-    <Transaction>2019/08/21 11:43:13.050,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\CadDepen.pas=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit3.pas</Transaction>
+    <Transaction>2019/08/20 12:02:34.000.623,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\cadSocForm.pas=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit2.pas</Transaction>
+    <Transaction>2019/08/20 12:02:34.000.623,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\cadSocForm.dfm=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit2.dfm</Transaction>
+    <Transaction>2019/08/21 11:31:59.000.841,=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit3.pas</Transaction>
+    <Transaction>2019/08/21 11:43:13.000.050,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit3.pas=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\CadDepen.pas</Transaction>
+    <Transaction>2019/08/21 11:43:13.000.050,C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\Unit3.dfm=C:\Users\hugo lazzari\Documents\gitRepos\DelphiClass04\CadDepen.dfm</Transaction>
   </Transactions>
 </BorlandProject>

@@ -10,16 +10,16 @@ uses
 type
   TCadSosForm = class(TForm)
     RgSex: TRadioGroup;
-    nome: TLabel;
-    endereco: TLabel;
-    telefone: TLabel;
-    titulo: TLabel;
-    Ddnasc: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
     EdtDataNasc: TEdit;
     EdtNome: TEdit;
     EdtTelefone: TEdit;
     EdtEndereco: TEdit;
-    cpf: TLabel;
+    Label7: TLabel;
     EdtCpf: TEdit;
     RgEstCiv: TRadioGroup;
     RgOrderBy: TRadioGroup;
@@ -33,7 +33,7 @@ type
     BbtDel: TBitBtn;
     BbtSair: TBitBtn;
     DBGrid1: TDBGrid;
-    BusSoc: TLabel;
+    Label8: TLabel;
     EdtBusSoc: TEdit;
     DBText1: TDBText;
     BbtAlt: TBitBtn;

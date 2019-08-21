@@ -4,8 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons,
-  Data.DB, Vcl.Grids, Vcl.DBGrids, Vcl.DBCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons;
 
 type
   TForm2 = class(TForm)
@@ -19,6 +18,7 @@ type
     EdtNome: TEdit;
     EdtTelefone: TEdit;
     EdtEndereco: TEdit;
+    Label6: TLabel;
     Label7: TLabel;
     EdtCpf: TEdit;
     RadioGroup2: TRadioGroup;
@@ -33,10 +33,6 @@ type
     BitBtn8: TBitBtn;
     BitBtn9: TBitBtn;
     BitBtn10: TBitBtn;
-    DBGrid1: TDBGrid;
-    Label8: TLabel;
-    Edit1: TEdit;
-    DBText1: TDBText;
   private
     { Private declarations }
   public

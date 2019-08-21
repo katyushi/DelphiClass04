@@ -9,11 +9,11 @@ uses
 
 type
   TForm1 = class(TForm)
-    SbSocios: TSpeedButton;
-    SbDependente: TSpeedButton;
-    SbCalendario: TSpeedButton;
-    SbCalc: TSpeedButton;
-    SbSair: TSpeedButton;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    SpeedButton4: TSpeedButton;
+    SpeedButton5: TSpeedButton;
     MainMenu1: TMainMenu;
     StatusBar1: TStatusBar;
     Label1: TLabel;
@@ -31,7 +31,7 @@ type
     XPManifest1: TXPManifest;
     Scios2: TMenuItem;
     Dependentes2: TMenuItem;
-    procedure SbSairClick(Sender: TObject);
+    procedure SpeedButton5Click(Sender: TObject);
     procedure Sair1Click(Sender: TObject);
     procedure Sair2Click(Sender: TObject);
   private
@@ -57,7 +57,7 @@ begin
 Application.Terminate;
 end;
 
-procedure TForm1.SbSairClick(Sender: TObject);
+procedure TForm1.SpeedButton5Click(Sender: TObject);
 begin
 Application.Terminate;
 end;

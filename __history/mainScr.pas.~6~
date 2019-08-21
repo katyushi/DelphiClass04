@@ -9,9 +9,9 @@ uses
 
 type
   TForm1 = class(TForm)
-    SbSocios: TSpeedButton;
-    SbDependente: TSpeedButton;
-    SbCalendario: TSpeedButton;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
     SbCalc: TSpeedButton;
     SbSair: TSpeedButton;
     MainMenu1: TMainMenu;

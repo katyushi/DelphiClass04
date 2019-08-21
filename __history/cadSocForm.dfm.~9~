@@ -49,6 +49,19 @@ object Form2: TForm2
     Height = 13
     Caption = 'Data de Nascimento:'
   end
+  object Label6: TLabel
+    Left = 520
+    Top = 32
+    Width = 81
+    Height = 23
+    Caption = 'DBText1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object Label7: TLabel
     Left = 224
     Top = 104
@@ -62,12 +75,6 @@ object Form2: TForm2
     Width = 80
     Height = 13
     Caption = 'Busca de Socios:'
-  end
-  object DBText1: TDBText
-    Left = 536
-    Top = 36
-    Width = 65
-    Height = 17
   end
   object RadioGroup1: TRadioGroup
     Left = 30

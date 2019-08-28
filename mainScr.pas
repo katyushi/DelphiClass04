@@ -42,6 +42,7 @@ type
     procedure Socios1Click(Sender: TObject);
     procedure Dependentes3Click(Sender: TObject);
     procedure Sair1Click(Sender: TObject);
+    procedure Sobre1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,7 +56,7 @@ implementation
 
 {$R *.dfm}
 
-uses cadSocForm, CadDepen, busSoc, busDep, ajudas;
+uses cadSocForm, CadDepen, busSoc, busDep, ajudas, about;
 
 procedure TCadMain.Sair1Click(Sender: TObject);
 begin
@@ -90,6 +91,11 @@ end;
 procedure TCadMain.Scios1Click(Sender: TObject);
 begin
 CadSosForm.ShowModal;
+end;
+
+procedure TCadMain.Sobre1Click(Sender: TObject);
+begin
+abouts.ShowModal;
 end;
 
 procedure TCadMain.Socios1Click(Sender: TObject);

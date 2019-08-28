@@ -116,6 +116,7 @@ object CadMain: TCadMain
     end
     object Sobre1: TMenuItem
       Caption = 'Sobre'
+      OnClick = Sobre1Click
     end
     object Ajuda1: TMenuItem
       Caption = 'Ajuda'

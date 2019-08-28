@@ -7,7 +7,8 @@ uses
   CadDepen in 'CadDepen.pas' {CadDpForm},
   busSoc in 'busSoc.pas' {BuscaSoc},
   busDep in 'busDep.pas' {BuscaDep},
-  ajudas in 'ajudas.pas' {help};
+  ajudas in 'ajudas.pas' {help},
+  about in 'about.pas' {abouts};
 
 {$R *.res}
 
@@ -20,5 +21,6 @@ begin
   Application.CreateForm(TBuscaSoc, BuscaSoc);
   Application.CreateForm(TBuscaDep, BuscaDep);
   Application.CreateForm(Thelp, help);
+  Application.CreateForm(Tabouts, abouts);
   Application.Run;
 end.

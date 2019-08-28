@@ -105,9 +105,21 @@ object CadMain: TCadMain
     end
     object Busca1: TMenuItem
       Caption = 'Busca'
+      object Socios1: TMenuItem
+        Caption = 'Socios'
+        OnClick = Socios1Click
+      end
+      object Dependentes3: TMenuItem
+        Caption = 'Dependentes'
+        OnClick = Dependentes3Click
+      end
     end
     object Sobre1: TMenuItem
       Caption = 'Sobre'
+    end
+    object Ajuda1: TMenuItem
+      Caption = 'Ajuda'
+      OnClick = Ajuda1Click
     end
     object Sair1: TMenuItem
       Caption = 'Sair'

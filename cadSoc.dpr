@@ -4,7 +4,10 @@ uses
   Vcl.Forms,
   mainScr in 'mainScr.pas' {CadMain},
   cadSocForm in 'cadSocForm.pas' {CadSosForm},
-  CadDepen in 'CadDepen.pas' {CadDpForm};
+  CadDepen in 'CadDepen.pas' {CadDpForm},
+  busSoc in 'busSoc.pas' {BuscaSoc},
+  busDep in 'busDep.pas' {BuscaDep},
+  ajudas in 'ajudas.pas' {help};
 
 {$R *.res}
 
@@ -14,5 +17,8 @@ begin
   Application.CreateForm(TCadMain, CadMain);
   Application.CreateForm(TCadSosForm, CadSosForm);
   Application.CreateForm(TCadDpForm, CadDpForm);
+  Application.CreateForm(TBuscaSoc, BuscaSoc);
+  Application.CreateForm(TBuscaDep, BuscaDep);
+  Application.CreateForm(Thelp, help);
   Application.Run;
 end.

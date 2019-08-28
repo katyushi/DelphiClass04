@@ -110,6 +110,18 @@
             <Form>CadDpForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="busSoc.pas">
+            <Form>BuscaSoc</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="busDep.pas">
+            <Form>BuscaDep</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="ajudas.pas">
+            <Form>help</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

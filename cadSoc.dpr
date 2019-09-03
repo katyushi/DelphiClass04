@@ -8,7 +8,8 @@ uses
   busSoc in 'busSoc.pas' {BuscaSoc},
   busDep in 'busDep.pas' {BuscaDep},
   ajudas in 'ajudas.pas' {help},
-  about in 'about.pas' {abouts};
+  about in 'about.pas' {abouts},
+  calendar in 'calendar.pas' {calendario};
 
 {$R *.res}
 
@@ -22,5 +23,6 @@ begin
   Application.CreateForm(TBuscaDep, BuscaDep);
   Application.CreateForm(Thelp, help);
   Application.CreateForm(Tabouts, abouts);
+  Application.CreateForm(Tcalendario, calendario);
   Application.Run;
 end.

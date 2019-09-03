@@ -9,31 +9,32 @@ uses
 
 type
   TCadMain = class(TForm)
-    SbSocios: TSpeedButton;
-    SbDependente: TSpeedButton;
-    SbCalendario: TSpeedButton;
-    SbCalc: TSpeedButton;
-    SbSair: TSpeedButton;
-    MainMenu1: TMainMenu;
     StatusBar1: TStatusBar;
-    Label1: TLabel;
-    Label2: TLabel;
+    Panel1: TPanel;
+    SbCalendario: TSpeedButton;
+    XPManifest1: TXPManifest;
+    Timer1: TTimer;
+    MainMenu1: TMainMenu;
     C1: TMenuItem;
-    Relatorios1: TMenuItem;
-    Busca1: TMenuItem;
-    Sobre1: TMenuItem;
-    Ajuda1: TMenuItem;
     Scios1: TMenuItem;
     Dependentes1: TMenuItem;
     N1: TMenuItem;
     Sair2: TMenuItem;
-    Timer1: TTimer;
-    XPManifest1: TXPManifest;
+    Relatorios1: TMenuItem;
     Scios2: TMenuItem;
     Dependentes2: TMenuItem;
+    Busca1: TMenuItem;
     Socios1: TMenuItem;
     Dependentes3: TMenuItem;
+    Sobre1: TMenuItem;
+    Ajuda1: TMenuItem;
     Sair1: TMenuItem;
+    Label2: TLabel;
+    Label1: TLabel;
+    SbSair: TSpeedButton;
+    SbCalc: TSpeedButton;
+    SbDependente: TSpeedButton;
+    SbSocios: TSpeedButton;
     procedure SbSairClick(Sender: TObject);
     procedure Ajuda1Click(Sender: TObject);
     procedure Sair2Click(Sender: TObject);
@@ -43,6 +44,10 @@ type
     procedure Dependentes3Click(Sender: TObject);
     procedure Sair1Click(Sender: TObject);
     procedure Sobre1Click(Sender: TObject);
+    procedure SbCalendarioClick(Sender: TObject);
+    procedure SbCalcClick(Sender: TObject);
+    procedure SbDependenteClick(Sender: TObject);
+    procedure SbSociosClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -56,7 +61,7 @@ implementation
 
 {$R *.dfm}
 
-uses cadSocForm, CadDepen, busSoc, busDep, ajudas, about;
+uses cadSocForm, CadDepen, busSoc, busDep, ajudas, about, calendar, ShellApi;
 
 procedure TCadMain.Sair1Click(Sender: TObject);
 begin
@@ -83,9 +88,29 @@ begin
 Application.Terminate;
 end;
 
+procedure TCadMain.SbCalcClick(Sender: TObject);
+begin
+WinExec('calc.exe',SW_SHOW);
+end;
+
+procedure TCadMain.SbCalendarioClick(Sender: TObject);
+begin
+calendario.ShowModal;
+end;
+
+procedure TCadMain.SbDependenteClick(Sender: TObject);
+begin
+CadDpForm.ShowModal;
+end;
+
 procedure TCadMain.SbSairClick(Sender: TObject);
 begin
 Application.Terminate;
+end;
+
+procedure TCadMain.SbSociosClick(Sender: TObject);
+begin
+CadSosForm.ShowModal;
 end;
 
 procedure TCadMain.Scios1Click(Sender: TObject);

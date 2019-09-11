@@ -2,8 +2,8 @@ object BuscaSoc: TBuscaSoc
   Left = 0
   Top = 0
   Caption = 'Busca de Socios'
-  ClientHeight = 189
-  ClientWidth = 447
+  ClientHeight = 215
+  ClientWidth = 537
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -27,6 +27,26 @@ object BuscaSoc: TBuscaSoc
     Height = 13
     Caption = 'Digite o Nome do Socio'
     WordWrap = True
+  end
+  object DBText1: TDBText
+    Left = 451
+    Top = 48
+    Width = 65
+    Height = 17
+  end
+  object Label1: TLabel
+    Left = 451
+    Top = 16
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 192
+    Width = 34
+    Height = 13
+    Caption = 'Nome :'
   end
   object edtBusca: TEdit
     Left = 16

@@ -100,35 +100,30 @@
         </DelphiCompile>
         <DCCReference Include="mainScr.pas">
             <Form>CadMain</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="cadSocForm.pas">
             <Form>CadSosForm</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="CadDepen.pas">
             <Form>CadDpForm</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="busSoc.pas">
             <Form>BuscaSoc</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="busDep.pas">
             <Form>BuscaDep</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="ajudas.pas">
             <Form>help</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="about.pas">
             <Form>abouts</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="calendar.pas">
             <Form>calendario</Form>
-            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="isTrashScreen.pas">
+            <Form>splash</Form>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

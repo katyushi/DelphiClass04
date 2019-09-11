@@ -2,8 +2,8 @@ object CadMain: TCadMain
   Left = 0
   Top = 0
   Caption = 'Controle de S'#243'cios'
-  ClientHeight = 162
-  ClientWidth = 437
+  ClientHeight = 146
+  ClientWidth = 481
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,19 +12,16 @@ object CadMain: TCadMain
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 437
-    Height = 143
+    Width = 481
+    Height = 127
     Align = alClient
     TabOrder = 1
-    ExplicitLeft = 163
-    ExplicitTop = 84
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object SbCalendario: TSpeedButton
       Left = 159
       Top = 8
@@ -32,22 +29,6 @@ object CadMain: TCadMain
       Height = 50
       Caption = 'Calendario'
       OnClick = SbCalendarioClick
-    end
-    object Label2: TLabel
-      Left = 192
-      Top = 120
-      Width = 31
-      Height = 13
-      Caption = 'Label2'
-      Visible = False
-    end
-    object Label1: TLabel
-      Left = 192
-      Top = 80
-      Width = 31
-      Height = 13
-      Caption = 'Label1'
-      Visible = False
     end
     object SbSair: TSpeedButton
       Left = 325
@@ -84,24 +65,42 @@ object CadMain: TCadMain
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 143
-    Width = 437
+    Top = 127
+    Width = 481
     Height = 19
-    Panels = <>
-    ExplicitTop = 160
-    ExplicitWidth = 404
+    Panels = <
+      item
+        Width = 50
+      end
+      item
+        Width = 50
+      end
+      item
+        Width = 50
+      end
+      item
+        Width = 50
+      end
+      item
+        Width = 50
+      end
+      item
+        Text = 'Hora/Data'
+        Width = 50
+      end>
   end
   object XPManifest1: TXPManifest
-    Left = 128
-    Top = 80
+    Left = 416
+    Top = 56
   end
   object Timer1: TTimer
-    Left = 72
-    Top = 80
+    OnTimer = Timer1Timer
+    Left = 440
+    Top = 8
   end
   object MainMenu1: TMainMenu
-    Left = 16
-    Top = 80
+    Left = 392
+    Top = 8
     object C1: TMenuItem
       Caption = 'Cadastro'
       object Scios1: TMenuItem

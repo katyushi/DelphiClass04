@@ -29,8 +29,6 @@ type
     Sobre1: TMenuItem;
     Ajuda1: TMenuItem;
     Sair1: TMenuItem;
-    Label2: TLabel;
-    Label1: TLabel;
     SbSair: TSpeedButton;
     SbCalc: TSpeedButton;
     SbDependente: TSpeedButton;
@@ -48,6 +46,7 @@ type
     procedure SbCalcClick(Sender: TObject);
     procedure SbDependenteClick(Sender: TObject);
     procedure SbSociosClick(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
   private
     { Private declarations }
   public
@@ -126,6 +125,14 @@ end;
 procedure TCadMain.Socios1Click(Sender: TObject);
 begin
 BuscaSoc.ShowModal;
+end;
+
+procedure TCadMain.Timer1Timer(Sender: TObject);
+begin
+  Statusbar1.Panels[5].Text:='Data/Hora: '
+  + DateToStr(Date)
+  +' / '
+  + TimeToStr(Time);
 end;
 
 end.

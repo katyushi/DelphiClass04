@@ -21,8 +21,8 @@ begin
     splash.Show;
     splash.Update;
     Application.Initialize;
-    Application.MainFormOnTaskbar := True;
     sleep(3000);
+    Application.MainFormOnTaskbar := True;
     Application.CreateForm(TCadMain, CadMain);
     Application.CreateForm(TCadSosForm, CadSosForm);
     Application.CreateForm(TCadDpForm, CadDpForm);

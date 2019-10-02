@@ -64,7 +64,7 @@ uses cadSocForm, CadDepen, busSoc, busDep, ajudas, about, calendar, ShellApi;
 
 procedure TCadMain.Sair1Click(Sender: TObject);
 begin
-Application.Terminate;
+Sair2Click(Sender);
 end;
 
 procedure TCadMain.Dependentes1Click(Sender: TObject);
@@ -83,8 +83,12 @@ help.ShowModal;
 end;
 
 procedure TCadMain.Sair2Click(Sender: TObject);
+var
+  resp:integer;
 begin
-Application.Terminate;
+  resp:=application.MessageBox('voce deseja realmente sair?','Sair',36);
+  if resp=6 then
+  Application.Terminate;
 end;
 
 procedure TCadMain.SbCalcClick(Sender: TObject);
@@ -104,7 +108,7 @@ end;
 
 procedure TCadMain.SbSairClick(Sender: TObject);
 begin
-Application.Terminate;
+Sair2Click(Sender);
 end;
 
 procedure TCadMain.SbSociosClick(Sender: TObject);
@@ -129,10 +133,8 @@ end;
 
 procedure TCadMain.Timer1Timer(Sender: TObject);
 begin
-  Statusbar1.Panels[5].Text:='Data/Hora: '
-  + DateToStr(Date)
-  +' / '
-  + TimeToStr(Time);
+  Statusbar1.Panels[2].Text:='Hora: '+ TimeToStr(Time);
+  Statusbar1.Panels[1].Text:='Data: '+ DateToStr(date);
 end;
 
 end.

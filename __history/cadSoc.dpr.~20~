@@ -11,8 +11,7 @@ uses
   ajudas in 'ajudas.pas' {help},
   about in 'about.pas' {abouts},
   calendar in 'calendar.pas' {calendario},
-  isTrashScreen in 'isTrashScreen.pas' {splash},
-  DM in 'DM.pas' {FDM: TDataModule};
+  isTrashScreen in 'isTrashScreen.pas' {splash};
 
 {$R *.res}
 
@@ -25,14 +24,13 @@ begin
     sleep(3000);
     Application.MainFormOnTaskbar := True;
     Application.CreateForm(TCadMain, CadMain);
-  Application.CreateForm(TCadSosForm, CadSosForm);
-  Application.CreateForm(TCadDpForm, CadDpForm);
-  Application.CreateForm(TBuscaSoc, BuscaSoc);
-  Application.CreateForm(TBuscaDep, BuscaDep);
-  Application.CreateForm(Thelp, help);
-  Application.CreateForm(Tabouts, abouts);
-  Application.CreateForm(Tcalendario, calendario);
-  Application.CreateForm(TFDM, FDM);
+    Application.CreateForm(TCadSosForm, CadSosForm);
+    Application.CreateForm(TCadDpForm, CadDpForm);
+    Application.CreateForm(TBuscaSoc, BuscaSoc);
+    Application.CreateForm(TBuscaDep, BuscaDep);
+    Application.CreateForm(Thelp, help);
+    Application.CreateForm(Tabouts, abouts);
+    Application.CreateForm(Tcalendario, calendario);
   finally
     FreeAndNil(splash);
   end;

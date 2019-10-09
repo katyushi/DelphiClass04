@@ -125,6 +125,11 @@
         <DCCReference Include="isTrashScreen.pas">
             <Form>splash</Form>
         </DCCReference>
+        <DCCReference Include="DM.pas">
+            <Form>FDM</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

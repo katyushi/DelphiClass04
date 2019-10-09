@@ -2,8 +2,8 @@ object CadMain: TCadMain
   Left = 0
   Top = 0
   Caption = 'Controle de S'#243'cios'
-  ClientHeight = 146
-  ClientWidth = 481
+  ClientHeight = 254
+  ClientWidth = 693
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,15 +12,18 @@ object CadMain: TCadMain
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 481
-    Height = 127
+    Width = 693
+    Height = 235
     Align = alClient
     TabOrder = 1
+    ExplicitWidth = 481
+    ExplicitHeight = 127
     object SbCalendario: TSpeedButton
       Left = 159
       Top = 8
@@ -35,7 +38,7 @@ object CadMain: TCadMain
       Width = 50
       Height = 50
       Caption = 'Sair'
-      OnClick = SbSairClick
+      OnClick = Sair2Click
     end
     object SbCalc: TSpeedButton
       Left = 246
@@ -64,23 +67,24 @@ object CadMain: TCadMain
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 127
-    Width = 481
+    Top = 235
+    Width = 693
     Height = 19
     Panels = <
       item
-        Width = 50
+        Text = 'Informa'#231#245'es'
+        Width = 400
       end
       item
-        Width = 50
+        Text = 'Data'
+        Width = 150
       end
       item
-        Width = 50
-      end
-      item
-        Text = 'Hora/Data'
+        Text = 'Hora'
         Width = 50
       end>
+    ExplicitTop = 127
+    ExplicitWidth = 481
   end
   object XPManifest1: TXPManifest
     Left = 416

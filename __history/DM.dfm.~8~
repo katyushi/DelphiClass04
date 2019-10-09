@@ -1,7 +1,7 @@
 object FDM: TFDM
   OldCreateOrder = False
-  Height = 254
-  Width = 392
+  Height = 420
+  Width = 592
   object conexao: TFDConnection
     ConnectionName = 'cnPsqlClube'
     Params.Strings = (
@@ -14,13 +14,13 @@ object FDM: TFDM
     LoginPrompt = False
     Transaction = transacao
     UpdateTransaction = transacao
-    Left = 144
-    Top = 32
+    Left = 48
+    Top = 24
   end
   object transacao: TFDTransaction
     Connection = conexao
-    Left = 200
-    Top = 32
+    Left = 112
+    Top = 24
   end
   object tbTitulo: TFDTable
     Active = True
@@ -29,8 +29,8 @@ object FDM: TFDM
     UpdateOptions.UpdateTableName = 'titulo'
     SchemaName = 'public'
     TableName = 'titulo'
-    Left = 144
-    Top = 96
+    Left = 224
+    Top = 144
   end
   object tbSocio: TFDTable
     Active = True
@@ -39,8 +39,8 @@ object FDM: TFDM
     UpdateOptions.UpdateTableName = 'socio'
     SchemaName = 'public'
     TableName = 'socio'
-    Left = 32
-    Top = 96
+    Left = 48
+    Top = 144
   end
   object tbDepende: TFDTable
     Active = True
@@ -49,52 +49,52 @@ object FDM: TFDM
     UpdateOptions.UpdateTableName = 'depende'
     SchemaName = 'public'
     TableName = 'depende'
-    Left = 88
-    Top = 96
+    Left = 128
+    Top = 144
   end
   object qrDepende: TFDQuery
     Connection = conexao
-    Left = 256
-    Top = 96
+    Left = 120
+    Top = 288
   end
   object qrTitulo: TFDQuery
     Connection = conexao
-    Left = 312
-    Top = 96
+    Left = 200
+    Top = 296
   end
   object qrSocio: TFDQuery
     Connection = conexao
-    Left = 200
-    Top = 96
+    Left = 48
+    Top = 280
   end
   object dsTbDepende: TDataSource
     DataSet = tbDepende
-    Left = 88
-    Top = 160
+    Left = 128
+    Top = 192
   end
   object dsTbSocio: TDataSource
     DataSet = tbSocio
-    Left = 32
-    Top = 160
+    Left = 48
+    Top = 192
   end
   object dsTbTitulo: TDataSource
     DataSet = tbTitulo
-    Left = 144
-    Top = 160
+    Left = 224
+    Top = 192
   end
   object dsQrSocio: TDataSource
     DataSet = qrSocio
-    Left = 200
-    Top = 160
+    Left = 40
+    Top = 344
   end
   object dsQrTitulo: TDataSource
     DataSet = qrTitulo
-    Left = 312
-    Top = 160
+    Left = 200
+    Top = 344
   end
   object dsQrDepende: TDataSource
     DataSet = qrDepende
-    Left = 256
-    Top = 160
+    Left = 120
+    Top = 344
   end
 end

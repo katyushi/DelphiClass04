@@ -1,7 +1,7 @@
 object FDM: TFDM
   OldCreateOrder = False
-  Height = 254
-  Width = 392
+  Height = 432
+  Width = 514
   object conexao: TFDConnection
     ConnectionName = 'cnPsqlClube'
     Params.Strings = (

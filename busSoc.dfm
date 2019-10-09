@@ -61,6 +61,7 @@ object BuscaSoc: TBuscaSoc
     Top = 80
     Width = 423
     Height = 97
+    DataSource = FDM.dsTbSocio
     TabOrder = 1
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText

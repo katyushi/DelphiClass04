@@ -28,5 +28,5 @@ var
 implementation
 
 {$R *.dfm}
-
+ uses DM;
 end.

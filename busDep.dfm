@@ -53,6 +53,7 @@ object BuscaDep: TBuscaDep
     Top = 80
     Width = 423
     Height = 97
+    DataSource = FDM.dsTbDepende
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText

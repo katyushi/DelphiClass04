@@ -103,6 +103,7 @@ object CadDpForm: TCadDpForm
     Top = 232
     Width = 489
     Height = 120
+    DataSource = FDM.dsTbDepende
     TabOrder = 5
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText

@@ -1,10 +1,9 @@
 object CadSosForm: TCadSosForm
   Left = 0
   Top = 0
-  ActiveControl = EdtDataNasc
   Caption = 'Cadastro de S'#243'cios'
-  ClientHeight = 473
-  ClientWidth = 661
+  ClientHeight = 482
+  ClientWidth = 751
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -58,7 +57,7 @@ object CadSosForm: TCadSosForm
   end
   object BusSoc: TLabel
     Left = 30
-    Top = 452
+    Top = 458
     Width = 80
     Height = 13
     Caption = 'Busca de Socios:'
@@ -82,46 +81,6 @@ object CadSosForm: TCadSosForm
     TabOrder = 0
     WordWrap = True
   end
-  object EdtDataNasc: TEdit
-    Left = 509
-    Top = 69
-    Width = 121
-    Height = 21
-    TabOrder = 1
-    Text = 'EdtDataNasc'
-  end
-  object EdtNome: TEdit
-    Left = 104
-    Top = 37
-    Width = 321
-    Height = 21
-    TabOrder = 2
-    Text = 'EdtNome'
-  end
-  object EdtTelefone: TEdit
-    Left = 104
-    Top = 101
-    Width = 97
-    Height = 21
-    TabOrder = 3
-    Text = 'EdtTelefone'
-  end
-  object EdtEndereco: TEdit
-    Left = 104
-    Top = 69
-    Width = 265
-    Height = 21
-    TabOrder = 4
-    Text = 'EdtEndereco'
-  end
-  object EdtCpf: TEdit
-    Left = 264
-    Top = 101
-    Width = 105
-    Height = 21
-    TabOrder = 5
-    Text = 'EdtCpf'
-  end
   object RgEstCiv: TRadioGroup
     Left = 224
     Top = 192
@@ -134,7 +93,7 @@ object CadSosForm: TCadSosForm
       'Casado (a)'
       'Separado (a)'
       'Viuvo (a)')
-    TabOrder = 6
+    TabOrder = 1
   end
   object RgOrderBy: TRadioGroup
     Left = 528
@@ -146,7 +105,7 @@ object CadSosForm: TCadSosForm
     Items.Strings = (
       'Titulo'
       'Nome')
-    TabOrder = 7
+    TabOrder = 2
   end
   object BbtInserir: TBitBtn
     Left = 41
@@ -154,7 +113,8 @@ object CadSosForm: TCadSosForm
     Width = 75
     Height = 25
     Caption = 'Inserir'
-    TabOrder = 8
+    TabOrder = 3
+    OnClick = BbtInserirClick
   end
   object BbtPrimeiro: TBitBtn
     Left = 41
@@ -162,7 +122,8 @@ object CadSosForm: TCadSosForm
     Width = 75
     Height = 25
     Caption = 'Primeiro'
-    TabOrder = 9
+    TabOrder = 4
+    OnClick = BbtPrimeiroClick
   end
   object BbtAlt: TBitBtn
     Left = 136
@@ -170,7 +131,8 @@ object CadSosForm: TCadSosForm
     Width = 75
     Height = 25
     Caption = 'Alterar'
-    TabOrder = 10
+    TabOrder = 5
+    OnClick = BbtAltClick
   end
   object BbtAnt: TBitBtn
     Left = 136
@@ -178,7 +140,8 @@ object CadSosForm: TCadSosForm
     Width = 75
     Height = 25
     Caption = 'Anterior'
-    TabOrder = 11
+    TabOrder = 6
+    OnClick = BbtAntClick
   end
   object BbtConfirm: TBitBtn
     Left = 232
@@ -186,7 +149,8 @@ object CadSosForm: TCadSosForm
     Width = 75
     Height = 25
     Caption = 'Confirmar'
-    TabOrder = 12
+    TabOrder = 7
+    OnClick = BbtConfirmClick
   end
   object BbtProx: TBitBtn
     Left = 232
@@ -194,7 +158,8 @@ object CadSosForm: TCadSosForm
     Width = 75
     Height = 25
     Caption = 'Proximo'
-    TabOrder = 13
+    TabOrder = 8
+    OnClick = BbtProxClick
   end
   object BbtCancel: TBitBtn
     Left = 328
@@ -203,7 +168,8 @@ object CadSosForm: TCadSosForm
     Height = 25
     Cancel = True
     Caption = 'Cancelar'
-    TabOrder = 14
+    TabOrder = 9
+    OnClick = BbtCancelClick
   end
   object BbtUlt: TBitBtn
     Left = 328
@@ -211,7 +177,8 @@ object CadSosForm: TCadSosForm
     Width = 75
     Height = 25
     Caption = 'Ultimo'
-    TabOrder = 15
+    TabOrder = 10
+    OnClick = BbtUltClick
   end
   object BbtDel: TBitBtn
     Left = 419
@@ -219,7 +186,8 @@ object CadSosForm: TCadSosForm
     Width = 75
     Height = 25
     Caption = 'Deletar'
-    TabOrder = 16
+    TabOrder = 11
+    OnClick = BbtDelClick
   end
   object BbtSair: TBitBtn
     Left = 419
@@ -227,27 +195,119 @@ object CadSosForm: TCadSosForm
     Width = 75
     Height = 25
     Caption = 'Sair'
-    TabOrder = 17
+    TabOrder = 12
+    OnClick = BbtSairClick
   end
   object DBGrid1: TDBGrid
     Left = 8
-    Top = 345
-    Width = 628
+    Top = 351
+    Width = 729
     Height = 96
     DataSource = FDM.dsTbSocio
-    TabOrder = 18
+    TabOrder = 13
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'cpf'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'nome'
+        Width = 180
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'endereco'
+        Width = 169
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'dtnasc'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'fone1'
+        Width = 69
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'fone2'
+        Width = 80
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'sexo'
+        Width = 25
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'eciv'
+        Width = 25
+        Visible = True
+      end>
   end
   object EdtBusSoc: TEdit
     Left = 120
-    Top = 447
+    Top = 453
     Width = 524
     Height = 21
+    TabOrder = 14
+  end
+  object DBEdtNome: TDBEdit
+    Left = 104
+    Top = 42
+    Width = 321
+    Height = 21
+    DataField = 'nome'
+    DataSource = FDM.dsTbSocio
+    TabOrder = 15
+  end
+  object DBEdtCpf: TDBEdit
+    Left = 264
+    Top = 101
+    Width = 105
+    Height = 21
+    DataField = 'cpf'
+    DataSource = FDM.dsTbSocio
+    TabOrder = 16
+  end
+  object DBEdtTel: TDBEdit
+    Left = 104
+    Top = 96
+    Width = 97
+    Height = 21
+    DataField = 'fone1'
+    DataSource = FDM.dsTbSocio
+    TabOrder = 17
+  end
+  object DBEdtEnd: TDBEdit
+    Left = 104
+    Top = 69
+    Width = 265
+    Height = 21
+    DataField = 'endereco'
+    DataSource = FDM.dsTbSocio
+    TabOrder = 18
+  end
+  object DBEdtDtNasc: TDBEdit
+    Left = 515
+    Top = 69
+    Width = 121
+    Height = 21
+    DataField = 'dtnasc'
+    DataSource = FDM.dsTbSocio
     TabOrder = 19
-    Text = 'EdtBusSoc'
   end
 end
